@@ -2,26 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <title>Box Example</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Starter Template</title>
-    <link href="scss/bootstrap.scss" rel="stylesheet" >
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- make seperate box types of different sizes next --> 
+    <style>
+      .box {
+        background-color: #3498db; /* Example background color */
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      }
+
+      .box.bg-image {
+        background-image: url('images/tetrisPatterns.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+      }
+    </style>
   </head>
   <body>
-    <img src="images/tetrisPatterns.jpg" alt="tetris block background" class="my-background-image">
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    <div class="container">
-      <div class="row">
-        <aside class="col-md-8 offset-md-2"><h2>Column 1</h2></aside>
-        <article class="col-md-4 order-md-1"><h2>Column 2</h2></article>
-      </div>
-      <div class="row">
-        <aside class="col-md-2"><h2>Column 1</h2></aside>
-        <article class="col-md-6"><h2>Column 2</h2></article>
-        <aside class="col-md-4"><h2>Column 3</h2></aside>
+    <div class="container py-5">
+      <div class="row g-4">
+        <div class="col-sm-6 col-md-4">
+          <div class="box">
+            <h3>Box 1</h3>
+            <p>Some content</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="box bg-image">
+            <h3>Box 2</h3>
+            <p>With background image</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="box" style="background-color: #2ecc71;">
+            <h3>Box 3</h3>
+            <p>Another color</p>
+          </div>
+        </div>
       </div>
     </div>
   </body>
 </html>
-
