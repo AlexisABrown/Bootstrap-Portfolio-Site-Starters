@@ -8,44 +8,50 @@
     <!-- make seperate box types of different sizes next --> 
     <style>
       .box {
-        background-color: #3498db; /* Example background color */
+        background-color: #1d3647; /* Example background color */
         color: white;
         padding: 20px;
         border-radius: 10px;
         text-align: center;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        box-shadow: 0 2px 8px rgba(111, 225, 151, 0.2);
       }
 
       .box.bg-image {
         background-image: url('images/tetrisPatterns.jpg');
         background-size: cover;
         background-position: center;
-        color: white;
+        color: rgb(10, 10, 10);
       }
+
+      .about {
+        color: rgb(97, 33, 33);
+      }
+
     </style>
   </head>
   <body>
     <div class="container py-5">
-      <div class="row g-4">
-        <div class="col-sm-6 col-md-4">
-          <div class="box">
-            <h3>Box 1</h3>
-            <p>Some content</p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="box bg-image">
-            <h3>Box 2</h3>
-            <p>With background image</p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="box" style="background-color: #2ecc71;">
-            <h3>Box 3</h3>
-            <p>Another color</p>
-          </div>
-        </div>
+  <div class="row g-4">
+    <!-- Box 1: One long column -->
+    <div class="col-md-4">
+      <div class = "about"; class="box h-100">
+        <h3>Box 1</h3>
+        <p>Long content or tall section</p>
       </div>
     </div>
+
+    <!-- Box 2 & Box 3 stacked -->
+    <div class="col-md-8 d-flex flex-column justify-content-between">
+      <div class="box mb-4">
+        <h3>Box 2</h3>
+        <p>Top box</p>
+      </div>
+      <div class="box">
+        <h3>Box 3</h3>
+        <p>Bottom box</p>
+      </div>
+    </div>
+  </div>
+</div>
   </body>
 </html>
