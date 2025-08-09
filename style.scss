@@ -1,14 +1,20 @@
-body {padding-top: 50px;}
-      .starter-template {padding: 40px 15px; text-align: center;}
-      aside {background-color: rgb(132, 50, 50);}
-      article {background-color: rgb(121, 174, 243);}
-      .my-background-image {
-        background-image: url("images/tetrisPatterns.jpg");
-        background-size: cover; /* This makes the image cover the entire element */
-        background-position: center; /* Centers the image */
-        width: 100%;
-        height: 500px; /* Or whatever height you need */
-        /* You might also want to add z-index to ensure it stays behind your grid content */
-        z-index: -1;
-        position: relative; /* If you need to position content over it later */
-      }
+.box {
+  background-color: #741b58; /* Example background color */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(151, 18, 95, 0.2);
+  font-family: "Racing Sans One", sans-serif;
+}
+
+.box.bg-image {
+  background-image: url('images/tetrisPatterns.jpg');
+  background-size: cover;
+  background-position: center;
+  color: rgb(10, 10, 10);
+}
+
+.about {
+  color: rgb(97, 33, 33);
+}
