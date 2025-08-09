@@ -1,0 +1,20 @@
+.box {
+  background-color: #741b58; /* Example background color */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(151, 18, 95, 0.2);
+  font-family: "Racing Sans One", sans-serif;
+}
+
+.box.bg-image {
+  background-image: url('images/tetrisPatterns.jpg');
+  background-size: cover;
+  background-position: center;
+  color: rgb(10, 10, 10);
+}
+
+.about {
+  color: rgb(97, 33, 33);
+}
